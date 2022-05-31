@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build My Docker Image')  {
       steps {
-        container('secureCID-agent') {
+        container('securecicd-agent') {
             sh 'docker info'
             sh 'touch Dockerfile'
             sh 'echo "FROM centos:7" > Dockerfile'
